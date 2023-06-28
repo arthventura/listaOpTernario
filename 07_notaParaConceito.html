@@ -10,7 +10,19 @@
     // Entre 5.9 e zero            E
 
     //Entrada
+    const nota = parseFloat(prompt("Digite a nota do aluno:"));
 
+const conceito = nota >= 9.0
+  ? "A"
+  : nota >= 8.0
+    ? "B"
+    : nota >= 7.0
+      ? "C"
+      : nota >= 6.0
+        ? "D"
+        : "E";
+
+alert(`O conceito correspondente à nota é: ${conceito}`);
 
     //Processamento
 

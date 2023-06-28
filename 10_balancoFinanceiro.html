@@ -10,6 +10,18 @@
     // Verifique se o usuário ganha mais do que recebe e apresente em tela, indicando quanto que sobrou após o pagamento das contas ou quanto que faltou para poder pagar todas as contas previstas.
 
     //Entrada
+    const contaAgua = parseFloat(prompt("Informe o valor da conta de água:"));
+    const contaEnergia = parseFloat(prompt("Informe o valor da conta de energia elétrica:"));
+    const contaTelefone = parseFloat(prompt("Informe o valor da conta de telefone:"));
+    const supermercado = parseFloat(prompt("Informe o valor das despesas no supermercado:"));
+    const salario = parseFloat(prompt("Informe o valor do salário mensal:"));
+
+    const despesasTotal = contaAgua + contaEnergia + contaTelefone + supermercado;
+    const saldo = salario - despesasTotal;
+
+    const mensagem = saldo >= 0 ? `Sobrou um saldo de R$ ${saldo.toFixed(2)}` : `Faltaram R$ ${Math.abs(saldo).toFixed(2)}`;
+
+    alert(mensagem);
 
 
     //Processamento

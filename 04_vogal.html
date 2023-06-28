@@ -4,7 +4,13 @@
     //Construa um programa que leia um caractere e informe se este caractere é uma vogal.
 
     //Entrada
+    const caractere = prompt("Digite um caractere:").toLowerCase();
 
+const ehVogal = /[aeiou]/.test(caractere);
+
+const mensagem = ehVogal ? "O caractere é uma vogal." : "O caractere não é uma vogal.";
+
+alert(mensagem);
 
     //Processamento
 
